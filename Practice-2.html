@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Banking UI</title>
+  <style>
+    /* Reset and global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      height: 100vh;
+    }
+
+    /* Center container */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    /* Card styling */
+    .card {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    /* Balance */
+    .balance {
+      font-size: 28px;
+      color: #28a745; /* green */
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    /* Button common styles */
+    .btn {
+      width: 100%;
+      padding: 12px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      margin: 10px 0;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    /* Deposit button */
+    .deposit {
+      background-color: #28a745;
+    }
+
+    /* Withdraw button */
+    .withdraw {
+      background-color: #dc3545;
+    }
+
+    /* Button hover effect */
+    .btn:hover {
+      transform: scale(1.02);
+    }
+
+    /* Responsive behavior */
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+
+      .balance {
+        font-size: 24px;
+      }
+
+      .btn {
+        font-size: 15px;
+        padding: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="balance">$0</div>
+      <button class="btn deposit">Deposit</button>
+      <button class="btn withdraw">Withdraw</button>
+    </div>
+  </div>
+</body>
+</html>
